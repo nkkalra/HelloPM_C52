@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikhil Kalra — SDET</title>
+<meta name="description" content="Nikhil Kalra — Senior Quality Assurance Engineer, SDET and test automation professional.">
+<style>
+:root{
+  --bg:#f6f7fb;--surface:#fff;--text:#14151a;--muted:#686b76;
+  --line:#e8e9ef;--purple:#5f35e8;--purple2:#7a5af8;--green:#12a76a;
+  --shadow:0 20px 60px rgba(24,20,55,.08);--radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(246,247,251,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,233,239,.75)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:-.05em;font-size:21px}.logo span{color:var(--purple)}
+.nav-links{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--purple)}
+.hero{padding:90px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:54px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid #ddd8ff;background:#f0edff;color:#5330d5;border-radius:999px;font-size:13px;font-weight:750}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px #dff7ed}
+h1{font-size:clamp(48px,7vw,82px);line-height:.98;letter-spacing:-.065em;margin:22px 0}
+h1 em{font-style:normal;color:var(--purple)}
+.hero p{font-size:19px;color:var(--muted);max-width:680px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:13px 18px;border-radius:12px;border:1px solid var(--line);font-weight:750;font-size:14px;background:var(--surface)}
+.btn.primary{background:var(--purple);color:white;border-color:var(--purple);box-shadow:0 10px 24px rgba(95,53,232,.2)}
+.btn:hover{transform:translateY(-1px)}
+.profile-card{background:linear-gradient(145deg,#171329,#35206c);color:#fff;padding:28px;border-radius:30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.profile-card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-60px;top:-70px;background:rgba(255,255,255,.08)}
+.initials{width:76px;height:76px;border-radius:22px;background:rgba(255,255,255,.13);display:grid;place-items:center;font-size:27px;font-weight:900;margin-bottom:70px}
+.profile-card h2{font-size:28px;letter-spacing:-.04em;margin:0 0 5px}
+.profile-card p{margin:0;color:#d8d2eb;font-size:14px}
+.meta{margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.13);display:grid;gap:10px;font-size:13px;color:#ddd7ed}
+section{padding:64px 0}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--purple);font-weight:850}
+h2.section-title{font-size:34px;letter-spacing:-.045em;margin:6px 0 0}
+.section-note{color:var(--muted);font-size:14px;max-width:430px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--surface);border:1px solid var(--line);padding:11px 14px;border-radius:12px;font-size:14px;font-weight:650;box-shadow:0 5px 18px rgba(20,20,40,.035)}
+.timeline{position:relative;margin-top:10px}
+.timeline:before{content:"";position:absolute;left:8px;top:12px;bottom:12px;width:1px;background:#dcdde5}
+.job{position:relative;padding-left:42px;margin:0 0 34px}
+.job:before{content:"";position:absolute;left:3px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--purple);box-shadow:0 0 0 6px var(--bg)}
+.job-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 30px rgba(20,20,40,.035)}
+.job-top{display:flex;justify-content:space-between;gap:20px}
+.job h3{margin:0;font-size:20px;letter-spacing:-.02em}
+.company{color:var(--purple);font-weight:750;margin-top:2px}
+.date{font-size:13px;color:var(--muted);white-space:nowrap}
+.job ul{margin:17px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+.job li{margin:7px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.info-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.info-card h3{margin:0 0 6px}.info-card p{margin:0;color:var(--muted);font-size:14px}
+footer{padding:34px 0 54px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+.contact-line{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.contact-line a{padding:10px 13px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+@media(max-width:800px){
+ .hero-grid{grid-template-columns:1fr}.hero{padding-top:55px}.profile-card{max-width:520px}
+ .nav-links{display:none}.section-head{display:block}.section-note{margin-top:10px}
+ .grid2{grid-template-columns:1fr}.job-top{display:block}.date{margin-top:5px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#">NK<span>.</span></a>
+    <div class="nav-links">
+      <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Senior Quality Assurance Engineer</div>
+      <h1>Quality that ships.<br><em>Automation that scales.</em></h1>
+      <p>SDET specialising in Java, Selenium, TestNG, Playwright, REST APIs and modern test automation. Based in Faridabad, Haryana.</p>
+      <div class="actions">
+        <a class="btn primary" href="#experience">View experience ↓</a>
+        <a class="btn" href="mailto:nikhilkalra554@gmail.com">Get in touch</a>
+      </div>
+    </div>
+    <aside class="profile-card">
+      <div class="initials">NK</div>
+      <h2>Nikhil Kalra</h2>
+      <p>SDET · QA Automation · API Testing</p>
+      <div class="meta">
+        <div>📍 Faridabad, Haryana, India</div>
+        <div>✉ nikhilkalra554@gmail.com</div>
+        <div>◷ Senior QA Engineer · Eptura</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="skills">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Toolkit</div><h2 class="section-title">Core skills</h2></div><div class="section-note">A practical QA stack spanning UI automation, APIs, databases, CI/CD and performance testing.</div></div>
+  <div class="skills">
+   <span class="chip">Java</span><span class="chip">Selenium</span><span class="chip">TestNG</span><span class="chip">Playwright</span><span class="chip">Maven</span><span class="chip">POM</span><span class="chip">REST API</span><span class="chip">Postman</span><span class="chip">Swagger</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">System Integration Testing</span><span class="chip">Scrum</span><span class="chip">JMeter</span><span class="chip">GCP</span>
+  </div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Career</div><h2 class="section-title">Experience</h2></div><div class="section-note">Progression across quality engineering, automation and API testing.</div></div>
+  <div class="timeline">
+   <article class="job"><div class="job-card">
+    <div class="job-top"><div><h3>Senior Quality Assurance Engineer</h3><div class="company">Eptura</div></div><div class="date">Apr 2024 — Present</div></div>
+    <ul><li>Senior QA engineering role in Gurugram, Haryana.</li><li>Current focus area: quality assurance and software testing.</li></ul>
+   </div></article>
+   <article class="job"><div class="job-card">
+    <div class="job-top"><div><h3>SDET-1</h3><div class="company">DotPe</div></div><div class="date">Oct 2023 — Mar 2024</div></div>
+    <ul><li>Worked as an SDET-1 in Gurugram, Haryana.</li></ul>
+   </div></article>
+   <article class="job"><div class="job-card">
+    <div class="job-top"><div><h3>Automation Quality Analyst</h3><div class="company">HELM360</div></div><div class="date">Dec 2020 — Sep 2023</div></div>
+    <ul>
+      <li>Contributed to planning, estimation and refinement of stories, epics and design changes in an Agile Scrum team.</li>
+      <li>Developed and maintained automated test scripts using Selenium WebDriver and Playwright.</li>
+      <li>Worked with public cloud, including GCP, and managed JSON test data generation, setup and cleanup.</li>
+      <li>Reported defects in ZOHO, collaborated with developers and resolved issues.</li>
+      <li>Integrated automated tests into CI/CD pipelines and participated in code reviews.</li>
+      <li>Developed JMeter performance scripts for Load, Stress and Soak testing.</li>
+    </ul>
+   </div></article>
+   <article class="job"><div class="job-card">
+    <div class="job-top"><div><h3>Associate Quality Analyst</h3><div class="company">Skilrock Technologies</div></div><div class="date">Dec 2019 — Nov 2020</div></div>
+    <ul>
+      <li>Manually tested API endpoints across input parameters, authentication methods and HTTP methods including GET, POST, PUT and DELETE.</li>
+      <li>Verified API request/response data accuracy, formatting and expected values.</li>
+      <li>Tested backend functionality including registration, login, player profiles and game sessions.</li>
+      <li>Performed regression and exploratory testing to identify issues and prevent regressions.</li>
+      <li>Participated in Daily Standups, Functional Refinement, Technical Refinement, Sprint Reviews and Retrospectives.</li>
+    </ul>
+   </div></article>
+  </div>
+ </div>
+</section>
+
+<section id="education">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Background</div><h2 class="section-title">Education & language</h2></div></div>
+  <div class="grid2">
+   <div class="info-card"><h3>B.Tech — Computer Science & Engineering</h3><p>Manav Rachna International University, Faridabad</p></div>
+   <div class="info-card"><h3>HelloPM</h3><p>July 2026</p></div>
+  </div>
+  <div class="info-card" style="margin-top:20px"><h3>Language</h3><p>Spanish — Limited Working</p></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Connect</div><h2 class="section-title">Let’s talk quality.</h2></div><div class="section-note">For professional conversations, reach out by email or LinkedIn.</div></div>
+  <div class="contact-line">
+   <a href="mailto:nikhilkalra554@gmail.com">Email ↗</a>
+   <a href="https://www.linkedin.com/in/nikhil-kalra-376a88171" target="_blank" rel="noopener">LinkedIn ↗</a>
+   <a href="tel:+919582586366">Call ↗</a>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="container">© 2026 Nikhil Kalra · Built as a single-file personal portfolio.</div></footer>
+</body>
+</html>
